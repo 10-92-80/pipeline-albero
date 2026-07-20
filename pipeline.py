@@ -33,7 +33,7 @@ def get_all_deals(token):
 
 # ── Classification ─────────────────────────────────────────────────────────
 EXCLUDED_STAGES = {
-    "Recámara","Stand by","Descartada/Perdida","Closed Lost","Closed Lost to Competition",
+    "Recámara","Stand by","Descartada/Perdida","Descartada en ciego","Closed Lost","Closed Lost to Competition",
     "Nunca se presentó","Análisis pero descartado por Albero","Analisis, pero descartado por Albero",
     "No Interesante","Vendido a otro / Potencial comprador","Cerrada y facturada",
     "Cerrada y cobrada","Cerrada y no facturada","-"
