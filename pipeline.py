@@ -125,7 +125,7 @@ def resp_tds(by_resp, r, idx):
         st = f'background:{bg};color:{col};'
         return (
             f'<td style="{st}"><div class="dc">{sem(item["calidad"],item["warn"])}<span class="dt2">{trunc(item["deal"],28)}</span></div></td>',
-            f'<td style="{st}">{trunc(item["stage"],12)}</td>',
+            f'<td style="{st}">{trunc(item["stage"],15)}</td>',
             f'<td style="{st}">{trunc(item["empresa"],18)}</td>'
         )
     return "<td></td>","<td></td>","<td></td>"
@@ -164,7 +164,7 @@ def build_html(by_resp, sb, fu, total, con_cands):
 body{{width:277mm;font-size:8px;background:#fff;padding:4px}}
 @media print{{
   *{{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}
-  col.cd{{width:46mm}}col.cf{{width:19mm}}col.ce{{width:27mm}}
+  col.cd{{width:37mm}}col.cf{{width:23mm}}col.ce{{width:32mm}}
   #login-overlay{{display:none!important}}
 }}
 #login-overlay{{position:fixed;top:0;left:0;width:100%;height:100%;background:#62635e;display:flex;align-items:center;justify-content:center;z-index:9999}}
