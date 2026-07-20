@@ -2,10 +2,13 @@ name: Actualizar Pipeline
 
 on:
   schedule:
-    - cron: '0 7 * * 1-5'   # Lunes a viernes a las 8h Madrid
-    - cron: '0 12 * * 1-5'  # Lunes a viernes a las 13h Madrid
-    - cron: '0 17 * * 1-5'  # Lunes a viernes a las 18h Madrid
-  workflow_dispatch:          # Permite ejecutarlo manualmente desde GitHub
+    - cron: '50 7 * * 1-5'    # Lunes a viernes a las 7:50h Madrid
+      timezone: 'Europe/Madrid'
+    - cron: '50 12 * * 1-5'   # Lunes a viernes a las 12:50h Madrid
+      timezone: 'Europe/Madrid'
+    - cron: '50 17 * * 1-5'   # Lunes a viernes a las 17:50h Madrid
+      timezone: 'Europe/Madrid'
+  workflow_dispatch:        # Permite ejecutarlo manualmente desde GitHub
 
 jobs:
   build:
